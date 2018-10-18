@@ -64,7 +64,11 @@ http://www.baidu.com:81
 | /WEB-INF/web.xml | 初始化工程配置信息 |                                          |
 | /crossdomin.xml  | 跨域策略文件       |                                          |
 | /icons/          | 目录遍历路径       |                                          |
+| /robots.txt      | 爬虫文件           |                                          |
 | ...              | ...                |                                          |
 
 
 
+## gratitude
+
+- JingYi

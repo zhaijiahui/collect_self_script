@@ -120,8 +120,14 @@ def request(ip):
 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Version/10.0 Mobile/14D27 Safari/602.1',
 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/14D27 UCBrowser/11.6.1.1003 Mobile  AliApp(TUnionSDK/0.1.20)']
     headers = { 'User-Agent': headers_list[random.randint(0,4)] }
-    disclosure = {'/.svn/entries':'dir','/.git/config':'[core]','/.DS_Store':'','/WEB-INF/web.xml':'','/crossdomin.xml':'',
-    '/icons/':'Index of'} # 敏感信息设置
+    disclosure = {
+    '/.svn/entries':'dir',
+    '/.git/config':'[core]',
+    '/.DS_Store':'',
+    '/WEB-INF/web.xml':'<?xml version=',
+    '/crossdomin.xml':'cross-domain-policy',
+    '/icons/':'Index of',
+    '/robots.txt':'Disallow'} # 敏感信息设置
     for u,j in disclosure.items():
         try:
             r = requests.get('http://'+ ip + u,headers=headers,timeout=3,verify=False)
