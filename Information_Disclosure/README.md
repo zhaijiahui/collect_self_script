@@ -9,7 +9,7 @@ Welcome all friends to mention more suggestions for improvement
 
 
 
-## environment
+## Environment
 
 python 3.x
 
@@ -41,7 +41,7 @@ pip install requests threadpool
 
 **if you want to scan special port | 如果你想扫描特殊端口**
 
-```192.168.0.1:8081```
+``` 192.168.0.1:8081```
 
 **if you wang to scan website url| 如果你想扫描网站地址**
 
@@ -56,15 +56,15 @@ http://www.baidu.com:81
 
 ## Support
 
-| type             | explanation        |
-| ---------------- | ------------------ |
-| /.svn/entries    | SVN信息泄露        |
-| /.git/config     | Git信息泄露        |
-| /.DS_Store       | DS_Store文件泄露   |
-| /WEB-INF/web.xml | 初始化工程配置信息 |
-| /crossdomin.xml  | 跨域策略文件       |
-| /icons/          | 目录遍历路径       |
-| ...              | ...                |
+| Type             | Explanation        | Exp                                      |
+| ---------------- | ------------------ | ---------------------------------------- |
+| /.svn/entries    | SVN信息泄露        | Seay-Svn源代码泄露漏洞利用工具           |
+| /.git/config     | Git信息泄露        | https://github.com/lijiejie/GitHack      |
+| /.DS_Store       | DS_Store文件泄露   | https://github.com/lijiejie/ds_store_exp |
+| /WEB-INF/web.xml | 初始化工程配置信息 |                                          |
+| /crossdomin.xml  | 跨域策略文件       |                                          |
+| /icons/          | 目录遍历路径       |                                          |
+| ...              | ...                |                                          |
 
 
 
